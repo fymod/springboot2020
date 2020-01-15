@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:  
+  mail:  
+    host: smtp.exmail.qq.com
+    username: me@zhaoguojian.com
+    password: 4QnC4fhbrGAtQa3a
+    properties:  
+      mail: 
+        smtp:  
+          auth: true  
+          timeout: 25000

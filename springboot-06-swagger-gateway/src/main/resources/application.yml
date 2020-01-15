@@ -1,0 +1,18 @@
+server:
+  port: 8088
+spring:
+  cloud:
+      gateway:
+        routes:
+        - id: swagger1
+          uri: http://localhost:8080
+          predicates:
+          - Path=/swagger1/**
+        - id: swagger2
+          uri: http://localhost:8081
+          predicates:
+          - Path=/swagger2/**
+        - id: swagger3
+          uri: http://localhost:8082
+          predicates:
+          - Path=/swagger3/**
